@@ -164,9 +164,19 @@ ul {
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
-
-  background-color: var(--title-color);
+  max-width: 1440px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/hero-bg.jpg) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.hero-bg {
+  
+}
+
 .btn-main {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -186,6 +196,14 @@ ul {
   background-color: var(--hover-color);
 }
 /* features */
+
+.features-icons {
+  width: 264px;
+  height: 112px;
+/* background: #232; */
+
+
+}
 
 .features-list {
   display: flex;
