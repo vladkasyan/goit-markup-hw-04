@@ -198,12 +198,44 @@ ul {
 /* features */
 
 .features-icons {
-  width: 264px;
-  height: 112px;
-/* background: #232; */
-
-
+ 
+  
 }
+
+.features-list-item::before {
+  display: block;
+  content:'';
+  height: 112px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-color-section);
+  border-radius: 4px;
+  margin-bottom: 32px;
+}
+
+.antena::before {
+ background-image: url(../images/antenna.svg);
+ content: " ";
+ 
+}
+
+.clock::before {
+  background-image: url(../images/clock.svg);
+  content: " ";
+  
+ }
+
+ .diagram::before {
+  background-image: url(../images/diagram.svg);
+  content: " ";
+  
+ }
+
+ .astronaut::before {
+  background-image: url(../images/astronaut.svg);
+  content: " ";
+  
+ }
 
 .features-list {
   display: flex;
@@ -251,6 +283,39 @@ ul {
   margin-right: 24px;
 }
 /* Our Team */
+.card-icons {
+}
+
+.card-text-container{
+ padding-left: 16px;
+ padding-right: 16px;
+}
+
+.card-link {
+  width: 16px;
+  height: 16px;
+}
+
+.card-icons-item {
+ width: 40px;
+ height: 40px;
+ border-radius: 100%;
+ background-color: var(--actient-color-);
+ display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icons-item:hover {
+  background-color: var(--hover-color);
+}
+
+.card-icons-list {
+  display: flex;
+  gap: 24px;
+}
+
+
 .section-our-team {
   background-color: var(--background-color-section);
   padding-top: 120px;
@@ -296,6 +361,7 @@ ul {
   flex: none;
   order: 1;
   flex-grow: 0;
+  margin-bottom: 8px;
 }
 /* footer */
 .footer-logo.link {
