@@ -10,6 +10,7 @@
   --portfolio-background-color: #e5e5e5;
   --customer-icons-color: #8e8f99;
   --footer-soc-icons: #31d0aa;
+  --modal-color: #FCFCFC;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -217,6 +218,29 @@ ul {
 .btn-main:hover {
   background-color: var(--hover-color);
 }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal {
+  position: absolute;
+width: 408px;
+min-height: 576px;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+
+background-color: var(--modal-color);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
+
 /* features */
 
 .features-icons-container {
